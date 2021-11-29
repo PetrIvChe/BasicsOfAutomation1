@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
     public void shouldReturnRemain0IfAmount1000() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         // int amount = 1000;
-        int expected = 1000;
+        int expected = 0;
         int actual = cashbackHackService.remain(1000);
         assertEquals(expected, actual);
 
@@ -40,7 +40,7 @@ public class CashbackHackServiceTest {
     public void shouldReturnRemain0IfAmount1001() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         // int amount = 1001;
-        int expected = 999;
+        int expected = 0;
         int actual = cashbackHackService.remain(1001);
         assertEquals(expected, actual);
 
